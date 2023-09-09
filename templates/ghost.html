@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/ghost.css') }}">
+        <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="game">
+            <div class="door" id="door1" onclick="checkDoor(1)">
+                <div class="door-number">1</div>
+                <div class="front"></div>
+                <div class="back"></div>
+            </div>
+            <div class="door" id="door2" onclick="checkDoor(2)">
+                <div class="door-number">2</div>
+                <div class="front"></div>
+                <div class="back"></div>
+            </div>
+            <div class="door" id="door3" onclick="checkDoor(3)">
+                <div class="door-number">3</div>
+                <div class="front"></div>
+                <div class="back"></div>
+            </div>
+        </div>
+
+        <div id="feedback">Choose a door!</div>
+
+    <script src="{{ url_for('static', filename='js/ghost.js') }}"></script>
+    </body>
+
+</html>
